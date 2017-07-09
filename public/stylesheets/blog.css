@@ -1,0 +1,239 @@
+.blog-home{
+    width: 100%;
+}
+.btn{
+    background-color: #ff6766;
+}
+a,a:hover{
+    text-decoration: none;
+    color: #ff6766;
+}
+ul,.col-md-1,.col-md-11{
+    margin: 0;
+    padding: 0;
+}
+.nav-left ul{
+    position: fixed;
+    width: 5%;
+    height: 680px;
+    background-color: black;
+}
+.nav-left ul li{
+    width: 100%;
+    height: 55px;
+    padding: 0;
+    text-align: center;
+}
+.nav-left ul li a{
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 55px;
+    text-decoration: none;
+}
+.nav-left ul li:first-child{
+    height: 55px;
+    background-color: #e78170;
+    text-align: center;
+}
+.nav-left ul li a:hover{
+    background-color: #e78170;
+}
+.nav-left ul .left-content i{
+    display: none;
+    position: absolute;
+    left: 112%;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    background-color: black;
+    color: white;
+    font-family: "微软雅黑";
+    font-style: normal;
+    border-radius: 3px;
+}
+.nav-left ul .left-content i.new{
+    top: 10%;
+}
+.nav-left ul .left-content i.write{
+    top: 20%;
+}
+
+.nav-left ul .left-content i:after{
+    content: "";
+    position: absolute;
+    left: -23%;
+    top: 20%;
+    width: 0;
+    height: 0;
+    border: 6px transparent solid;
+    border-right-color: black;
+}
+
+.nav-left ul .left-content a:hover + i{
+    display: block;
+}
+.blog-home .col-md-6{
+    margin-left: 19%;
+}
+.navbar{
+    z-index: 999;
+    width: 50%;
+    position: fixed;
+    padding-top: 2%;
+    border-bottom: 2px solid #C7C6C6;
+    background-color: white;
+}
+.navbar-form input{
+    float: right;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.navbar-form .btn{
+    position: absolute;
+    left: 92%;
+    top: 42%;
+    height: 30px;
+    text-decoration: none;
+    color: lightgray;
+    background-color: white;
+}
+.content{
+    position: absolute;
+    margin-top: 15%;
+    width: 100%;
+    font-family: "Microsoft YaHei";
+}
+.content ul{
+    width: 100%;
+}
+.content li{
+    width: 100%;
+    height: 150px;
+    list-style: none;
+    border-bottom: 1px dotted #C7C6C6;
+}
+.content li .btn-pdf{
+    position: absolute;
+    left: 78%;
+    color: white;
+}
+.content li .btn-del{
+    position: absolute;
+    left: 90%;
+    color: white;
+}
+.content .news_list li p{
+    width: 100%;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.content .more_content h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.content .more_content h5{
+    font-family: "Microsoft YaHei";
+    color: #b8bbc7;
+}
+.content .more_content span#author{
+    margin-left: 0;
+}
+.content .more_content h5 span{
+    margin: 10px 5px;
+}
+.content .more_content p{
+    overflow-wrap: break-word;
+    letter-spacing: 1px;
+}
+.content_footer li a:hover{
+    color: #ff6766;
+}
+.content_footer  .page_num a,
+.content_footer  .page_num a:hover{
+    background: #ff6766;
+    color: white;
+    font-family: "Cambria Math";
+    font-weight: 900;
+}
+.content ul li a{
+    text-decoration: none;
+    color: #ff6766;
+}
+.comments{
+    margin: 30px 0;
+    padding-top: 15px;
+    border-top: 1px dotted #C7C6C6;
+}
+.comment_form{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #C7C6C6;
+    border-radius: 5px;
+}
+.comment_form .btn{
+    height: 30px;
+    line-height: 18px;
+    color: white;
+
+}
+.comments .comment_list ul li{
+    padding: 15px 0;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.comments .comment_list .avatar{
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 1%;
+}
+.comments .comment_list .avatar img{
+    width: 100%;
+    height: 100%;
+}
+.comments .comment_list .author{
+    display: inline-block;
+    padding: 5px;
+}
+.comments .comment_list  .author p{
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.comments .comment_list .comment_content{
+    display: block;
+    padding-top: 6px;
+    padding-left: 3px;
+}
+.user_info{
+    position: absolute;
+    float: right;
+    left: 100%;
+    margin-left: 30%;
+    width: 80px;
+    height: 80px;
+}
+.user_info img{
+    width: 80%;
+}
+.user_info .btn-group a:hover img{
+    border: 2px solid #ff6766;
+}
+.btn-group ul{
+    padding: 0;
+    margin-left: -90%;
+}
+.btn-group ul li{
+    border-bottom: 1px solid lightgray;
+}
+.btn-group ul li a{
+    text-align: center;
+}
+.btn-group ul li span{
+    margin-left: 10px;
+}
+

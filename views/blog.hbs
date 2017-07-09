@@ -1,0 +1,106 @@
+<ul class="news_list">
+    {{#each data}}
+        <li>
+            <a href="/blogs/{{_id}}"><h3>{{title}}</h3></a>
+            <h5>作者: lin</h5>
+            <p>{{{content}}}</p>
+            <a href="/users/newsDelete/{{_id}}" class="btn btn-sm btn-del" data-toggle="confirm"
+               data-message="确认要删除此文章吗">delete</a>
+            <a href="/pdf/{{_id}}" class="btn btn-sm btn-pdf">导出pdf</a>
+        </li>
+    {{/each}}
+</ul>
+<div class="content_footer">
+    <ul class="pagination pagination-sm no-margin pull-right">
+        <li>
+            <a href="{{#le page 1}}?{{else}}?p={{reduce page 1}}{{/le}}" aria-label="Previous"><span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="page_num">
+            <a href="?p={{page}}">{{page}}</a>
+        </li>
+        <li>
+            <a href="{{#ge page pageCount}}?p={{pageCount}}{{else}}?p={{add page 1}}{{/ge}}" aria-label="Previous"><span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<!--<div class="content-wrapper">-->
+    <!--&lt;!&ndash; Main content &ndash;&gt;-->
+    <!--<section class="content">-->
+        <!--<div class="box box-widget">-->
+            <!--<div class="box-header with-border">-->
+                <!--<div class="user-block">-->
+                    <!--<img class="img-circle" src="{{entries.author.imgUrl}}" alt="User Image">-->
+                    <!--<span class="title"><a href="#">{{entries.title}}</a></span>-->
+                    <!--<span class="postdate"><b>发布于 {{formatDate entries.meta.createAt}}</b><i>{{timeFromNow entries.meta.createAt}}</i></span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="box-body">-->
+                <!--<p> {{{entries.content}}}</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
+<!--</div>-->
+<!--<div class="content-wrapper">-->
+    <!--<section class="content-header">-->
+        <!--<h1>-->
+            <!--技术新闻-->
+            <!--<small>关于H5/JS/CSS3/NODEJS的文章</small>-->
+        <!--</h1>-->
+        <!--<ol class="breadcrumb">-->
+            <!--<li><a href="#"><i class="fa fa-dashboard"></i> 新闻</a></li>-->
+            <!--<li class="active">Content</li>-->
+        <!--</ol>-->
+    <!--</section>-->
+
+    <!--&lt;!&ndash; Main content &ndash;&gt;-->
+    <!--<section class="content">-->
+        <!--{{#each entries}}-->
+            <!--<div class="box box-widget">-->
+                <!--<div class="box-header with-border">-->
+                    <!--<div class="user-block">-->
+                        <!--<img class="img-circle" src="{{author.imgUrl}}" alt="User Image">-->
+                        <!--<span class="title"><a href="#">{{title}}</a></span>-->
+                        <!--<span class="postdate"><b>发布于 {{formatDate meta.createAt}}</b><i>{{timeFromNow meta.createAt}}</i></span>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="box-body">-->
+                    <!--<p> {{{content}}}</p>-->
+                    <!--&lt;!&ndash;<div class="menu-block"><a href="/pdf/{{_id}}" class="btn btn-primary btn-sm">导出pdf</a></div>&ndash;&gt;-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--{{/each}}-->
+
+        <!--<div class="box-footer">-->
+            <!--<nav>-->
+                <!--<ul class="pagination">-->
+                    <!--<li>-->
+                        <!--<a href="{{#le pageNumber 1}}?{{else}}?page={{reduce pageNumber 1}}{{/le}}"-->
+                           <!--aria-label="Previous">-->
+                            <!--<span aria-hidden="true">&laquo;</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--{{#times pageCount 1 pageCount}}-->
+                        <!--<li {{#equals pageNumber this.step}}class="active" {{/equals}}>-->
+                            <!--<a href="?page={{step}}{{#if recommend}}&recommend={{recommend}}{{/if}}{{#if type}}&type={{type}}{{/if}}">{{step}}</a>-->
+                        <!--</li>-->
+                    <!--{{/times}}-->
+                    <!--<li>-->
+                        <!--<a href="{{#ge pageNumber pageCount}}?page={{pageCount}}{{else}}?page={{add pageNumber 1}}{{/ge}}"-->
+                           <!--aria-label="Previous">-->
+                            <!--<span aria-hidden="true">&raquo;</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+        <!--</div>-->
+
+    <!--</section>-->
+<!--</div>-->
+
+
+<script src="/javascripts/blog.js"></script>

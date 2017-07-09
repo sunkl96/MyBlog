@@ -1,0 +1,43 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background:url(/images/back.jpg);
+  background-position:center;
+  background-repeat:repeat;
+  /*background-size:100%;*/
+  display:flex;
+  justify-content:center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.login-box{
+
+  margin-top: 50px;
+  height: 400px;
+  width: 400px;
+  border-radius: 1em;
+  background-color: #1b7e5a;
+  z-index: 10;
+}
+.text{
+  font-size:40px;
+  color: white;
+  font-family: "微软雅黑";
+
+}
+.margincenter{
+  margin-left:15%;
+  width: 70%;
+}
+.glyphicon{
+  margin-right: 25px;
+}
+#toRegister{
+  margin:15px auto 0px 142px;
+  font-size:15px;
+  color: white;
+  font-family: "微软雅黑";
+}
